@@ -1,0 +1,214 @@
+/* landing dos */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/* ------ GRID -------- */
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ------ flexbox------ */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A2B38B;
+
+}
+
+
+.header img {
+    width: 250px;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.header nav ul li {
+    margin: 20px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.info-section div {
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-section div img {
+    width: 450px;
+
+
+}
+
+.texto-uno h3 {
+    margin: 20px;
+    font-size: 25px;
+}
+
+.texto-uno p {
+    margin: 20px;
+
+
+}
+
+.info-mayorista div {
+    background-color: rgb(130, 115, 151);
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px 20px;
+
+}
+
+
+.info-mayorista div img {
+    width: 450px;
+
+}
+
+.texto-dos h3 {
+    text-transform: capitalize;
+    font-size: 25px;
+
+}
+
+.info-cueros div {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.info-cueros div img {
+    width: 550px;
+
+}
+
+.texto-tres h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.info-articulos div {
+    background-color: #616c51;
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px 20px;
+
+
+}
+
+.info-articulos div img {
+    object-fit: contain;
+    width: 450px;
+
+}
+
+.texto-cuatro {
+    color: rgb(222, 234, 244);
+    font-weight: bolder;
+}
+
+
+.footer-info {
+    margin: 20px 20px;
+    padding: 20px 20px;
+    background-color: #A2B38B;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+    justify-content: stretch;
+    align-content: center;
+}
+
+
+.footer-info img {
+    padding-left: 30px;
+    width: 50px;
+}
+
+.footer-info ul li {
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+}
+
+.footer-info h3 {
+    font-size: 25px;
+}
+
+
+
+
+@media only screen and (max-width: 450px) {
+
+    .header {
+        background-color: aliceblue;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header img {
+        width: 200px;
+    }
+
+    .header nav ul {
+        background-color: #eef3e59e;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header nav ul li {
+        margin: 5px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .footer-info {
+        display: grid;
+        grid-template-columns: 300px;
+        grid-column-gap: 10px;
+        align-content: center;
+
+    }
+
+    .footer-info h3 {
+        font-size: 20px;
+    }
+}
